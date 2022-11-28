@@ -3,20 +3,28 @@
 	<head>
 		<title>To Do</title>
 		<link rel="stylesheet" href="style/todo.css" />
+		<script src="https://kit.fontawesome.com/872e59b8fa.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<div class="container">
 			<div class="left-container">
-				<h1>Todo List</h1>
-				<button id="new-item" onclick="newElement()">New Item</button>
+				<div class="title">
+					<i class="fas fa-list-ol"></i>
+					<h1>Todo</h1>
+				</div>
+				<button id="new-item" onclick="newElement()">Quick Task</button>
 			</div>
 			<div class="right-container">
 				<div id="tab-header">
-					
-					Header
+					<i class="add-category fa fa-plus"></i>
+					<div>Element 1</div>
+					<div>Element 2</div>
+					<div>Element 3</div>
+					<div>Element 4</div>
+					<i class="userlog fa fa-user"></i>
 				</div>
 				<div id="tab-container">
-					tab-container
+					Hello Here is the task container
 				</div>
 			</div>
 		</div>
