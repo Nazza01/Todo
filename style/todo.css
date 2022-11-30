@@ -36,7 +36,12 @@ body {
 	background: black;
 	color: white;
 }
-
+#tab-insert {
+	display: flex;
+	flex-direction: row;
+	padding-left: 10px;
+	padding-right: 10px;
+}
 #tab-header {
 	display: flex;
 	flex-direction: row;
@@ -55,8 +60,8 @@ body {
 }
 
 #tab-header div:hover {
-	background-color: aqua;	
-	cursor:context-menu;
+	background-color: aqua;
+	cursor: pointer;
 }
 
 #tab-header .add-category {
