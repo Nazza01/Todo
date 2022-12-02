@@ -38,6 +38,17 @@ function	saveCategory()
 	}
 }
 
+function storeCategory()
+{
+	const savedCategory = [];
+
+	for (const element of placement.children) 
+	{
+		placement.push(element.textContent);
+	}
+	localStorage.setItem("categoryName", JSON.stringify(savedCategory));
+}
+
 function	createCategory(element)
 {
 	let	newCateogry = document.createElement("div");
@@ -50,16 +61,6 @@ function	createCategory(element)
 	closeModal();
 }
 
-function storeCategory()
-{
-	const savedCategory = [];
-
-	for (const element of placement.children) 
-	{
-		placement.push(element.textContent);
-	}
-	localStorage.setItem("categoryName", JSON.stringify(savedCategory));
-}
 
 window.onload = () => 
 {
